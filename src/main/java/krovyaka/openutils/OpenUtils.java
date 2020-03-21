@@ -1,9 +1,8 @@
 package krovyaka.openutils;
 
 import com.google.common.collect.Lists;
-import its_meow.openscreens.common.block.BlockFlatScreen;
-import its_meow.openscreens.common.tileentity.TileEntityFlatScreen;
 import krovyaka.openutils.common.block.BlockScreenChest;
+import krovyaka.openutils.common.tileentity.TileEntityScreenChest;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -32,15 +31,15 @@ public class OpenUtils {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        for(Block block : BLOCKS) {
+        for (Block block : BLOCKS) {
             event.getRegistry().register(block);
         }
-        GameRegistry.registerTileEntity(TileEntityFlatScreen.class, new ResourceLocation(MODID + ":screenchest"));
+        GameRegistry.registerTileEntity(TileEntityScreenChest.class, new ResourceLocation(MODID + ":screenchest"));
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        for(Block block : BLOCKS) {
+        for (Block block : BLOCKS) {
             //noinspection ConstantConditions
             event.getRegistry().register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
         }
