@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "openutils:screenchest",
+            "data": 0
+        }
+    ],
+    "result": {
+        "item": "openutils:screenchest",
+        "data": 1,
+        "count": 1
+    }
+}
