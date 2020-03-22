@@ -2,12 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "openutils:screenchest",
+            "item": "openutils:screen_chest_private",
             "data": 0
         }
     ],
     "result": {
-        "item": "openutils:screenchest",
+        "item": "openutils:screen_chest_public",
         "data": 1,
         "count": 1
     }

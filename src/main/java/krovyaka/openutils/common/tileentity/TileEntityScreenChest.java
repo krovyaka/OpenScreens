@@ -1,7 +1,9 @@
 package krovyaka.openutils.common.tileentity;
 
-import li.cil.oc.common.tileentity.Screen;
+import net.minecraft.tileentity.TileEntity;
 
-public class TileEntityScreenChest extends Screen {
+public class TileEntityScreenChest extends TileEntity {
+    public TileEntityScreenChest() {
 
+    }
 }

@@ -7,5 +7,4 @@ import net.minecraftforge.fml.relauncher.Side;
 public class OpenUtilsClient {
 
 
-
 }
