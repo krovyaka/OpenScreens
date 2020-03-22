@@ -1,9 +1,9 @@
 {
     "parent": "block/orientable",
     "textures": {
-        "bottom": "openutils:blocks/screen_chest_bottom",
-        "top": "openutils:blocks/screen_chest_top",
-        "front": "openutils:blocks/screen_chest_front",
-        "side": "openutils:blocks/screen_chest_side"
+        "bottom": "openutils:blocks/screen_chest_public_side",
+        "top": "openutils:blocks/screen_chest_public_side",
+        "front": "openutils:blocks/screen_chest_public_front",
+        "side": "openutils:blocks/screen_chest_public_side"
     }
 }

@@ -1,14 +1,16 @@
 package krovyaka.openutils.common.block;
 
 import krovyaka.openutils.common.tileentity.TileEntityScreenChest;
+import li.cil.oc.common.GuiType;
 import li.cil.oc.common.block.SimpleBlock;
+import li.cil.oc.common.block.traits.GUI;
 import net.minecraft.block.material.Material;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
 
-public class BlockScreenChest extends SimpleBlock {
+public class BlockScreenChest extends SimpleBlock implements GUI {
 
     public final boolean isPublic;
 
@@ -17,10 +19,14 @@ public class BlockScreenChest extends SimpleBlock {
         this.isPublic = isPublic;
     }
 
-
     @Nullable
     @Override
     public TileEntity createNewTileEntity(World world, int i) {
         return new TileEntityScreenChest();
+    }
+
+    @Override
+    public GuiType.EnumVal guiType() {
+        return GuiType.Screen();
     }
 }
