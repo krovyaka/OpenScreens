@@ -1,5 +1,8 @@
 {
     "variants": {
-        "normal": { "model": "openutils:screen_chest_public" }
+        "facing=north": { "model": "openutils:screen_chest_public" },
+        "facing=south": { "model": "openutils:screen_chest_public", "y": 180 },
+        "facing=west":  { "model": "openutils:screen_chest_public", "y": 270 },
+        "facing=east":  { "model": "openutils:screen_chest_public", "y": 90 }
     }
 }
