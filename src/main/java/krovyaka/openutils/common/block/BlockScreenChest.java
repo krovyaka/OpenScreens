@@ -1,5 +1,6 @@
 package krovyaka.openutils.common.block;
 
+import krovyaka.openutils.common.tileentity.TileEntityScreenChest;
 import li.cil.oc.common.GuiType;
 import li.cil.oc.common.block.SimpleBlock;
 import li.cil.oc.common.block.traits.GUI;
@@ -8,6 +9,10 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityFurnace;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
@@ -47,5 +52,14 @@ public class BlockScreenChest extends SimpleBlock implements GUI {
     @Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
+    }
+
+    @Override
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        TileEntity tileEntity = world.getTileEntity(pos);
+        if (tileEntity instanceof TileEntityScreenChest) {
+            player.displayGUIChest((TileEntityScreenChest) tileEntity);
+        }
+        return true;
     }
 }
