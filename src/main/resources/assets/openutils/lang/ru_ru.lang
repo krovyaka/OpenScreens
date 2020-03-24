@@ -3,3 +3,5 @@ tile.openutils.screen_chest_private.name=Монитор с сундуком (П�
 tile.openutils.screen_chest_public.name=Монитор с сундуком (Публичный)
 tooltip.openutils.screen_chest_private.info=§7Комбинация Монитора (3-й уровень) и Сундука
 tooltip.openutils.screen_chest_public.info=§7Комбинация Монитора (3-й уровень) и Сундука
+
+tile.tutorial_container.name="test"

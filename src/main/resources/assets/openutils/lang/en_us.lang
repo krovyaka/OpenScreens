@@ -3,3 +3,7 @@ tile.openutils.screen_chest_private.name=Screen Chest (Private)
 tile.openutils.screen_chest_public.name=Screen Chest (Public)
 tooltip.openutils.screen_chest_private.info=§7Chest & Screen (Tier 3) combination
 tooltip.openutils.screen_chest_public.info=§7Chest & Screen (Tier 3) combination
+
+tile.secure_chest.name=Secure Chest
+tile.openutils.secure_chest.name=Secure Chest
+tooltip.openutils.secure_chest.info=Secure Chest

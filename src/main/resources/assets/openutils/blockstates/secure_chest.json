@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "openutils:secure_chest" },
+        "facing=south": { "model": "openutils:secure_chest", "y": 180 },
+        "facing=west":  { "model": "openutils:secure_chest", "y": 270 },
+        "facing=east":  { "model": "openutils:secure_chest", "y": 90 }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "bottom": "openutils:blocks/secure_chest_side",
+        "top": "openutils:blocks/secure_chest_side",
+        "front": "openutils:blocks/secure_chest_front",
+        "side": "openutils:blocks/secure_chest_side"
+    }
+}
