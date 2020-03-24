@@ -36,7 +36,7 @@ public class GuiHandler implements IGuiHandler {
 
         switch (ID) {
             case GUI_TUTORIAL_CONTAINER_ID:
-                return new GuiTutorialContainer(player.inventory, (TileEntitySecureChest) te);
+                return new GuiSecureChest(player.inventory, (TileEntitySecureChest) te);
             default: return null;
         }
     }

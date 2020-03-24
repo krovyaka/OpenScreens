@@ -10,19 +10,15 @@ import javax.annotation.Nonnull;
 /**
  * Created by Toby on 27/06/2017.
  */
-public class SlotTutorial extends SlotItemHandler {
+public class SlotForSecureChest extends SlotItemHandler {
 
-    public SlotTutorial(IItemHandler itemHandler, int index, int xPosition, int yPosition) {
+    public SlotForSecureChest(IItemHandler itemHandler, int index, int xPosition, int yPosition) {
         super(itemHandler, index, xPosition, yPosition);
     }
 
     @Override
     public boolean isItemValid(@Nonnull ItemStack stack) {
-        if (stack.getItem() == Items.IRON_SHOVEL) {
-            return true;
-        } else {
-            return false;
-        }
+        return true;
     }
 
 }

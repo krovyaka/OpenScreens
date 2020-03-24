@@ -5,6 +5,7 @@ import krovyaka.openutils.client.gui.GuiHandler;
 import krovyaka.openutils.common.block.BlockScreenChest;
 import krovyaka.openutils.common.block.BlockSecureChest;
 import krovyaka.openutils.common.tileentity.TileEntityScreenChest;
+import krovyaka.openutils.common.tileentity.TileEntitySecureChest;
 import krovyaka.openutils.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -58,6 +59,7 @@ public class OpenUtils {
             event.getRegistry().register(block);
         }
         GameRegistry.registerTileEntity(TileEntityScreenChest.class, new ResourceLocation(MODID + ":screen_chest"));
+        GameRegistry.registerTileEntity(TileEntitySecureChest.class, new ResourceLocation(MODID + ":secure_chest"));
     }
 
     @SubscribeEvent

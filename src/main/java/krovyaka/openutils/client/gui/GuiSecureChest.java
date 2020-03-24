@@ -14,11 +14,11 @@ import java.awt.*;
 /**
  * Created by Toby on 27/06/2017.
  */
-public class GuiTutorialContainer extends GuiContainer {
+public class GuiSecureChest extends GuiContainer {
 
     private static final ResourceLocation texture = new ResourceLocation(OpenUtils.MODID, "textures/gui/container.png");
 
-    public GuiTutorialContainer(InventoryPlayer player, TileEntitySecureChest tileEntitySecureChest) {
+    public GuiSecureChest(InventoryPlayer player, TileEntitySecureChest tileEntitySecureChest) {
         super(new ContainerSecureChest(player, tileEntitySecureChest));
         xSize = 176;
         ySize = 166;
